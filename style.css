@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #ffe09d  
+     
+    transition: background 0.5s ease;  
+}
+
+h1  {
+    text-align: center;
+    margin-bottom: 30px; color: rgba(109, 87, 0, 0.825);
+    text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.825); /* Text shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; color: rgba(104, 0, 0, 0.825);
+}
+
+form {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+label {
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ff9800; 
+    color: white;
+    border: #0a0500 3P0X;   border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+button:hover {
+    background-color: #f57c00;  
+    transform: translateY(-3px);  
+}
+
+#clear {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #ffdd00; 
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); 
+    text-align: center;
+    max-width: 700px;
+    font-size: 1.3em;
+    line-height: 1.8;
+    animation: fadeIn 1s ease-out; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+    
+@media (max-width: 768px) {
+    label {
+        display: block;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    #clear {
+        width: 90%;
+        padding: 20px;
+    }
+}
